@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Positioning Lab</title>
   <style type="text/css">
-   
+    /* ---------------Box Sizing----------------- */
     html {
       box-sizing: border-box;
     }
@@ -23,34 +23,78 @@
       color: #FFF;
       text-align: center;
       line-height: 24px;
+      margin: 0;
+      padding: 0;
     }
+    
+    /* Large square box container that anchors the inner elements */
     #wrapper {
       background-color: #FFF;
       border: 1px solid #c0c0c0;
-      width: 800px;
-      margin-right: auto;
-      margin-left: auto;
-      text-shadow: 2px 2px #000;
+      width: 500px;
+      height: 500px;
+      margin: 20px auto;
+      position: relative; /* Crucial: This anchors the absolute positioned children */
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
+
+    /* Core sizes and text layout for the color blocks */
+    #navy, #teal, #blue, #aqua {
+      position: absolute; /* Pinned relative to #wrapper */
+      width: 90px;
+      height: 90px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-shadow: 1px 1px 2px #000, -1px -1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000;
+    }
+
+    /* Pinned to Top Left of wrapper */
     #navy {
       background-color: #001f3f;
+      top: 0;
+      left: 0;
     }
+    
+    /* Pinned to Top Right of wrapper */
     #teal {
       background-color: #39CCCC;
+      top: 0;
+      right: 0;
     }
+    
+    /* Pinned to Bottom Left of wrapper */
     #blue {
       background-color: #0074D9;
+      bottom: 0;
+      left: 0;
     }
+    
+    /* Pinned to Bottom Right of wrapper */
     #aqua {
       background-color: #7FDBFF;
+      bottom: 0;
+      right: 0;
     }
+
+    /* Grey square block perfectly centered inside the wrapper */
     #footer {
-      background-color: #666;
+      background-color: #666666;
+      width: 90px;
+      height: 90px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-shadow: 1px 1px 2px #000, -1px -1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000;
     }
+    
     h1 {
       color: #000;
       font-weight: normal;
-      padding: 50px;
+      margin: 0;
+      padding: 40px 0 10px 0;
     }
   </style>
 </head>

@@ -30,8 +30,20 @@
       width: 800px;
       margin-right: auto;
       margin-left: auto;
-      text-shadow: 2px 2px #000;
+      
+      /* Layout Fixes */
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      padding: 40px;
     }
+
+    /* Target the color blocks */
+    #navy, #teal, #blue, #aqua {
+      padding: 70px 0;
+      text-shadow: 1px 1px 2px #000, -1px -1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000;
+    }
+
     #navy {
       background-color: #001f3f;
     }
@@ -43,6 +55,14 @@
     }
     #aqua {
       background-color: #7FDBFF;
+    }
+
+    /* Target the footer element */
+    #footer {
+      background-color: #666666;
+      grid-column: span 2;
+      padding: 10px 0;
+      text-shadow: 1px 1px 2px #000, -1px -1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000;
     }
     
     h1 {

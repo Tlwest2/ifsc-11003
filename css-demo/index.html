@@ -1,24 +1,153 @@
-  <!DOCTYPE html>
-
- <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+  <title>IFSC 11003 - Prototype</title>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Keyword rich narrative on site purpose" />
+  <meta name="author" content="Student Name" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <meta charset="UTF-8">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <meta name="description" content="Keyword Rich Description">
-
-  <meta name="author" content="Your Name">
-
-  <title>IFSC 11003 | Terrence West</title>
-
+  <!-- Style Sheet -->
+  <link href="../css-demo/style.css" rel="stylesheet" />
 </head>
 
 <body>
+  <a class="visually-hidden" href="../index.html">Back content</a>
+  <header class="primary">
+    <h1><a href="../index.html">Building the Modern Web</a></h1>
+    <p class="subtitle">HTML5, CSS, JavaScript Fundamentals</p>
+    <nav class="primary container" aria-label="Primary">
+      <ul>
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <h1>Web Technologies Demo</h1>
+  <!-- Main landmark gives you a clean selector target for weeks 6–9 -->
+  <main id="main-content" class="container">
+
+    <section id="content">
+      <h2>Introduction to Web Design</h2>
+      <p>
+        Web design combines structure, visual presentation, and interactive features to create useful online experiences. In this course, I am learning how HTML, CSS, and JavaScript work together to build accessible, responsive websites.
+      </p>
+    </section>
+
+    <section id="flexbox-froggy">
+      <h2>Flexbox Froggy</h2>
+      <p>
+        I completed all 24 levels of Flexbox Froggy.
+        <a href="../assets/img/Screenshot%202026-10-22%20152001.png">View my Level 24 completion screenshot</a>.
+      </p>
+    </section>
+
+    <section id="blog" aria-labelledby="recent-posts">
+      <h2 id="recent-posts">Recent Posts</h2>
+
+      <article class="post">
+        <header>
+          <time class="post-date" datetime="2026-01-01">January 1, 2026</time>
+
+          <figure>
+            <img src="https://placehold.co/300x200" alt="Placeholder image" />
+            <figcaption>Image Caption</figcaption>
+          </figure>
+
+          <h3><a href="#" rel="bookmark">Article Title</a></h3>
+        </header>
+
+        <p>
+          This article explores how thoughtful page structure makes websites easier to navigate, understand, and maintain.
+        </p>
+
+        <footer class="post-meta">
+          Posted by <a href="#">Post Author</a>
+        </footer>
+      </article>
+
+      <article class="post">
+        <header>
+          <time class="post-date" datetime="2026-01-01">January 1, 2026</time>
+
+          <figure>
+            <img src="https://placehold.co/300x200" alt="Placeholder image" />
+            <figcaption>Image Caption</figcaption>
+          </figure>
+
+          <h3><a href="#" rel="bookmark">Article Title</a></h3>
+        </header>
+
+        <p>
+          Learn how CSS selectors and layout rules help organize content and create consistent designs across a website.
+        </p>
+
+        <footer class="post-meta">
+          Posted by <a href="#">Post Author</a>
+        </footer>
+      </article>
+
+      <article class="post">
+        <header>
+          <time class="post-date" datetime="2026-01-01">January 1, 2026</time>
+
+          <figure>
+            <img src="https://placehold.co/300x200" alt="Placeholder image" />
+            <figcaption>Image Caption</figcaption>
+          </figure>
+
+          <h3><a href="#" rel="bookmark">Article Title</a></h3>
+        </header>
+
+        <p>
+          JavaScript adds interactivity to web pages, helping users engage with content and complete common tasks.
+        </p>
+
+        <footer class="post-meta">
+          Posted by <a href="#">Post Author</a>
+        </footer>
+      </article>
+
+    </section>
+
+  </main>
+  <aside aria-label="Sidebar">
+    <div class="container">
+
+      <article class="widget">
+        <header>
+          <h2>Sample Sidebar Item</h2>
+        </header>
+
+        <p>
+          Quisque justo erat, varius placerat fermentum vel, iaculis vel ligula...
+          <a href="#">Read More &raquo;</a>
+        </p>
+
+        <footer>Widget Footer</footer>
+      </article>
+
+      <article class="widget">
+        <header>
+          <h2>Sample Sidebar Item</h2>
+        </header>
+
+        <p>
+          Quisque justo erat, varius placerat fermentum vel, iaculis vel ligula...
+          <a href="#">Read More &raquo;</a>
+        </p>
+
+        <footer>Widget Footer</footer>
+      </article>
+
+    </div>
+  </aside>
+
+  <footer class="primary">
+    <p>&copy; Terrence West</p>
+  </footer>
 
 </body>
 

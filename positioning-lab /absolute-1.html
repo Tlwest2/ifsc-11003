@@ -23,34 +23,78 @@
       color: #FFF;
       text-align: center;
       line-height: 24px;
+      margin: 0;
+      padding: 0;
     }
+    
+    /* White centered box container */
     #wrapper {
       background-color: #FFF;
       border: 1px solid #c0c0c0;
-      width: 800px;
-      margin-right: auto;
-      margin-left: auto;
-      text-shadow: 2px 2px #000;
+      width: 500px;
+      height: 160px;
+      margin: 20px auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
+
+    /* Core sizes and text styling for the corner blocks */
+    #navy, #teal, #blue, #aqua {
+      position: fixed;
+      width: 100px;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-shadow: 1px 1px 2px #000, -1px -1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000;
+    }
+
+    /* Pinned to Top Left */
     #navy {
       background-color: #001f3f;
+      top: 0;
+      left: 0;
     }
+    
+    /* Pinned to Top Right */
     #teal {
       background-color: #39CCCC;
+      top: 0;
+      right: 0;
     }
+    
+    /* Pinned to Bottom Left */
     #blue {
       background-color: #0074D9;
+      bottom: 0;
+      left: 0;
     }
+    
+    /* Pinned to Bottom Right */
     #aqua {
       background-color: #7FDBFF;
+      bottom: 0;
+      right: 0;
     }
+
+    /* Grey square block in the center of the white wrapper */
     #footer {
-      background-color: #666;
+      background-color: #666666;
+      width: 110px;
+      height: 110px;
+      display: flex;
+      justify-content: center;
+      align-items: top;
+      padding-top: 5px;
+      text-shadow: 1px 1px 2px #000, -1px -1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000;
     }
+    
     h1 {
       color: #000;
       font-weight: normal;
-      padding: 50px;
+      margin: 0;
+      padding: 40px 0 20px 0;
     }
   </style>
 </head>
